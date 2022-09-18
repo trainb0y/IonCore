@@ -112,6 +112,7 @@ object MiscStarshipCommands : SLCommand() {
 	}
 
 	@CommandAlias("jump")
+	@CommandCompletion("@planets")
 	fun onJump(sender: Player, planet: String) {
 		val starship: ActivePlayerStarship = getStarshipPiloting(sender)
 
